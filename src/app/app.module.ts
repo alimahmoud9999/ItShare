@@ -11,6 +11,11 @@ import { AdminProdectComponent } from './admin/admin-prodect/admin-prodect.compo
 import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.component';
 import { ShopingCartComponent } from './shoping-cart/shoping-cart.component';
 import { LoginComponent } from './login/login.component';
+import {AngularFireModule} from "angularfire2";
+import {AngularFireDatabaseModule} from "angularfire2/database";
+import { environment } from 'src/environments/environment';
+
+
 
 @NgModule({
   declarations: [
@@ -26,7 +31,10 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    AngularFireModule,
+    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(environment.firebase)
 
   ],
   providers: [],
