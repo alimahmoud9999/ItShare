@@ -17,7 +17,6 @@ const routes: Routes = [
   {path: 'admin/order' , component : AdminOrdersComponent , canActivate :[AuthGuardService,AdminAuthGuardService]},
   {path: 'ShopingCart' , component : ShopingCartComponent , canActivate : [AuthGuardService]},
   {path: 'login' , component : LoginComponent}
-
 ];
 
 @NgModule({

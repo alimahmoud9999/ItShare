@@ -18,6 +18,9 @@ import { environment } from 'src/environments/environment';
 import { AuthGuardService } from './services/auth-guard.service';
 import { UserService } from './services/user.service';
 import { AuthService } from './services/auth.service';
+import { AdminUsersComponent } from './admin/admin-users/admin-users.component';
+import { CheckOutComponent } from './check-out/check-out.component';
+import { OrderSuccessComponent } from './order-success/order-success.component';
 
 
 
@@ -30,7 +33,10 @@ import { AuthService } from './services/auth.service';
     AdminProdectComponent,
     AdminOrdersComponent,
     ShopingCartComponent,
-    LoginComponent
+    LoginComponent,
+    AdminUsersComponent,
+    CheckOutComponent,
+    OrderSuccessComponent
   ],
   imports: [
     BrowserModule,
